@@ -355,7 +355,7 @@ export const AdScreen = ({ onNext, onPrevious, adPosition }) => {
           }}
         >
           <img 
-            src={isPlaying ? '/icons/pause.svg' : '/icons/play.svg'} 
+            src={isPlaying ? process.env.PUBLIC_URL + '/icons/pause.svg' : process.env.PUBLIC_URL + '/icons/play.svg'} 
             alt={isPlaying ? 'Pause' : 'Play'}
             style={{
               width: '32px',
@@ -386,7 +386,7 @@ export const AdScreen = ({ onNext, onPrevious, adPosition }) => {
           }}
         >
           <img 
-            src={isMuted ? '/icons/audio-off.svg' : '/icons/audio-on.svg'} 
+            src={isMuted ? process.env.PUBLIC_URL + '/icons/audio-off.svg' : process.env.PUBLIC_URL + '/icons/audio-on.svg'} 
             alt={isMuted ? 'Unmute' : 'Mute'}
             style={{
               width: '32px',
