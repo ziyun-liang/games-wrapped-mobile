@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/games-wrapped-mobile/static/js/main.968135af.js",
+    "index.html": "/games-wrapped-mobile/index.html",
+    "main.968135af.js.map": "/games-wrapped-mobile/static/js/main.968135af.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.968135af.js"
+  ]
+}
