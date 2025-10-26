@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/games-wrapped-mobile/static/js/main.2ce5c59a.js",
+    "main.js": "/games-wrapped-mobile/static/js/main.b224e8f1.js",
     "index.html": "/games-wrapped-mobile/index.html",
-    "main.2ce5c59a.js.map": "/games-wrapped-mobile/static/js/main.2ce5c59a.js.map"
+    "main.b224e8f1.js.map": "/games-wrapped-mobile/static/js/main.b224e8f1.js.map"
   },
   "entrypoints": [
-    "static/js/main.2ce5c59a.js"
+    "static/js/main.b224e8f1.js"
   ]
 }
