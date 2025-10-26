@@ -13,7 +13,7 @@ export const TopGameRevealScreen = ({ userData, onNext, onPrevious, currentScree
       left: 0,
       width: '100%',
       height: '100%',
-      backgroundImage: 'url(/images/topgamebg.png)',
+      backgroundImage: `url(${process.env.PUBLIC_URL}/images/topgamebg.png)`,
       backgroundSize: '120% 120%',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
@@ -114,7 +114,7 @@ export const ConnectionsPerfectScreen = ({ userData, onNext, onPrevious, current
       zIndex: 2
     }}>
       <img 
-        src="/images/dice.png" 
+        src={process.env.PUBLIC_URL + "/images/dice.png"} 
         alt="Dice" 
         style={{
           width: '100%',
@@ -135,7 +135,7 @@ export const ConnectionsPerfectScreen = ({ userData, onNext, onPrevious, current
       zIndex: 2
     }}>
       <img 
-        src="/images/dice.png" 
+        src={process.env.PUBLIC_URL + "/images/dice.png"} 
         alt="Dice" 
         style={{
           width: '100%',
@@ -156,7 +156,7 @@ export const ConnectionsPerfectScreen = ({ userData, onNext, onPrevious, current
       zIndex: 2
     }}>
       <img 
-        src="/images/dice.png" 
+        src={process.env.PUBLIC_URL + "/images/dice.png"} 
         alt="Dice" 
         style={{
           width: '100%',
@@ -177,7 +177,7 @@ export const ConnectionsPerfectScreen = ({ userData, onNext, onPrevious, current
       zIndex: 2
     }}>
       <img 
-        src="/images/dice.png" 
+        src={process.env.PUBLIC_URL + "/images/dice.png"} 
         alt="Dice" 
         style={{
           width: '100%',
@@ -198,7 +198,7 @@ export const ConnectionsPerfectScreen = ({ userData, onNext, onPrevious, current
       zIndex: 2
     }}>
       <img 
-        src="/images/dice.png" 
+        src={process.env.PUBLIC_URL + "/images/dice.png"} 
         alt="Dice" 
         style={{
           width: '100%',
@@ -219,7 +219,7 @@ export const ConnectionsPerfectScreen = ({ userData, onNext, onPrevious, current
       zIndex: 2
     }}>
       <img 
-        src="/images/dice.png" 
+        src={process.env.PUBLIC_URL + "/images/dice.png"} 
         alt="Dice" 
         style={{
           width: '100%',
@@ -327,7 +327,7 @@ export const PersonalMessageScreen = ({ userData, onNext, onPrevious, currentScr
             borderRadius: '20px'
           }}
         >
-          <source src="/videos/editornote.mp4" type="video/mp4" />
+          <source src={process.env.PUBLIC_URL + "/videos/editornote.mp4"} type="video/mp4" />
         </video>
         
         {/* Video Controls */}

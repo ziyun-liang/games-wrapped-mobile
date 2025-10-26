@@ -104,7 +104,7 @@ export const AdScreen = ({ onNext, onPrevious, adPosition }) => {
         justifyContent: 'center',
         zIndex: 5
       }}>
-        <img src="/images/gamewrapper-logo.svg" alt="Games Wrapped" style={{ height: '24px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
+        <img src={process.env.PUBLIC_URL + "/images/gamewrapper-logo.svg"} alt="Games Wrapped" style={{ height: '24px', width: 'auto', filter: 'brightness(0) invert(1)' }} />
       </div>
 
           {/* Countdown message */}
@@ -169,7 +169,7 @@ export const AdScreen = ({ onNext, onPrevious, adPosition }) => {
             <div key={i} style={{ display: 'flex', alignItems: 'center', height: '16px' }}>
               {isGPosition ? (
                 <img
-                  src="/images/g-logo.png"
+                  src={process.env.PUBLIC_URL + "/images/g-logo.png"}
                   alt="Google"
                   style={{
                     width: '16px',
@@ -224,7 +224,7 @@ export const AdScreen = ({ onNext, onPrevious, adPosition }) => {
           zIndex: 1
         }}
       >
-        <source src={adPosition === 0 ? "/videos/ad1.mp4" : adPosition === 6 ? "/videos/ad2.mp4" : "/videos/ad3.mp4"} type="video/mp4" />
+        <source src={adPosition === 0 ? process.env.PUBLIC_URL + "/videos/ad1.mp4" : adPosition === 6 ? process.env.PUBLIC_URL + "/videos/ad2.mp4" : process.env.PUBLIC_URL + "/videos/ad3.mp4"} type="video/mp4" />
       </video>
 
       {/* Gradient overlay for readability - top 1/5 and bottom 1/4 */}

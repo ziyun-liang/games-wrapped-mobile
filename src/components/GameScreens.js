@@ -17,7 +17,7 @@ export const WordleStarterScreen = ({ userData, onNext, onPrevious, currentScree
       zIndex: 5
     }}>
       <img 
-        src="/images/wordle.svg" 
+        src={process.env.PUBLIC_URL + "/images/wordle.svg"} 
         alt="Wordle" 
         style={{
           width: '100%',
@@ -61,7 +61,7 @@ export const WordlePerformanceScreen = ({ userData, onNext, onPrevious, currentS
       transform: 'translateX(-50%)',
       zIndex: 5
     }}>
-      <img src="/images/wordle.svg" alt="Wordle" style={{ height: '80px', width: 'auto' }} />
+      <img src={process.env.PUBLIC_URL + "/images/wordle.svg"} alt="Wordle" style={{ height: '80px', width: 'auto' }} />
     </div>
     
     <div style={{ textAlign: 'center', maxWidth: '300px' }}>
@@ -107,7 +107,7 @@ export const WordleBestSolveScreen = ({ userData, onNext, onPrevious, currentScr
       transform: 'translateX(-50%)',
       zIndex: 5
     }}>
-      <img src="/images/wordle.svg" alt="Wordle" style={{ height: '80px', width: 'auto' }} />
+      <img src={process.env.PUBLIC_URL + "/images/wordle.svg"} alt="Wordle" style={{ height: '80px', width: 'auto' }} />
     </div>
     
     {/* Title positioned below Wordle icon */}
@@ -306,7 +306,7 @@ export const SpellingBeeLongestScreen = ({ userData, onNext, onPrevious, current
       left: 0,
       width: '100%',
       height: '100%',
-      backgroundImage: 'url(/images/spellingbeebg.png)',
+      backgroundImage: `url(${process.env.PUBLIC_URL}/images/spellingbeebg.png)`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
@@ -322,7 +322,7 @@ export const SpellingBeeLongestScreen = ({ userData, onNext, onPrevious, current
       zIndex: 5
     }}>
       <img 
-        src="/images/spellingbeeicon.svg" 
+        src={process.env.PUBLIC_URL + "/images/spellingbeeicon.svg"} 
         alt="Spelling Bee" 
         style={{
           height: '120px',
@@ -367,7 +367,7 @@ export const SpellingBeeGeniusScreen = ({ userData, onNext, onPrevious, currentS
       zIndex: 5
     }}>
       <img 
-        src="/images/connections-logo.svg" 
+        src={process.env.PUBLIC_URL + "/images/connections-logo.svg"} 
         alt="Connections" 
         style={{
           width: '100%',

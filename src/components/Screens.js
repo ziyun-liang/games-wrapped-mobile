@@ -47,7 +47,7 @@ export const WelcomeScreen = ({ onNext }) => (
         pointerEvents: 'none'
       }}>
         <img 
-          src="/images/floating-bg.gif" 
+          src={process.env.PUBLIC_URL + "/images/floating-bg.gif"} 
           alt="Floating background animation" 
           style={{
             position: 'absolute',
@@ -84,7 +84,7 @@ export const WelcomeScreen = ({ onNext }) => (
           alignItems: 'center',
           justifyContent: 'center'
         }}>
-          <img src="/images/nyt-logo.svg" alt="The New York Times" style={{ width: '100%', height: 'auto' }} />
+          <img src={process.env.PUBLIC_URL + "/images/nyt-logo.svg"} alt="The New York Times" style={{ width: '100%', height: 'auto' }} />
         </div>
         
         {/* Games Wrapped text - positioned exactly like Figma */}
@@ -157,7 +157,7 @@ export const WelcomeScreen = ({ onNext }) => (
         </div>
         
         {/* Google logo */}
-        <img src="/images/google-logo.svg" alt="Google" style={{ width: '110px', height: '38px' }} />
+        <img src={process.env.PUBLIC_URL + "/images/google-logo.svg"} alt="Google" style={{ width: '110px', height: '38px' }} />
       </div>
     </div>
   </div>
@@ -178,7 +178,7 @@ export const GreetingScreen = ({ userName, onNext, onPrevious, currentScreen = 0
       zIndex: 1
     }}>
       <img 
-        src="/images/hijamie_bg.svg" 
+        src={process.env.PUBLIC_URL + "/images/hijamie_bg.svg"} 
         alt="Background pattern" 
         style={{
           width: '100%',
@@ -245,7 +245,7 @@ export const TimeOfDayScreen = ({ userData, onNext, onPrevious, currentScreen = 
       zIndex: 1
     }}>
       <img 
-        src="/images/you-solve-bg.svg" 
+        src={process.env.PUBLIC_URL + "/images/you-solve-bg.svg"} 
         alt="Background pattern" 
         style={{
           width: '100%',

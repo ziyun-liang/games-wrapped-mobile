@@ -16,7 +16,7 @@ const SummaryScreen = ({ userData, onNext, onPrevious, currentScreen = 13 }) => 
     
     {/* Background card with colorful image */}
     <div style={{
-      backgroundImage: 'url(/images/highlightgraphic.png)',
+      backgroundImage: `url(${process.env.PUBLIC_URL}/images/highlightgraphic.png)`,
       backgroundSize: '120% 120%',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
@@ -37,7 +37,7 @@ const SummaryScreen = ({ userData, onNext, onPrevious, currentScreen = 13 }) => 
         transform: 'translateX(-50%)',
         zIndex: 2
       }}>
-        <img src="/images/highlightlogo.svg" alt="Highlights" style={{ height: '40px', width: 'auto' }} />
+        <img src={process.env.PUBLIC_URL + "/images/highlightlogo.svg"} alt="Highlights" style={{ height: '40px', width: 'auto' }} />
       </div>
       
       {/* #nytgameswrapped2025 on colorful card */}

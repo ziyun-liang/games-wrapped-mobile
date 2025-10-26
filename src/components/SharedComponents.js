@@ -47,7 +47,7 @@ export const ProgressIndicator = ({ current, total = 14, adPosition = null }) =>
             {/* Show G at adPosition, otherwise show regular bar */}
             {isGPosition ? (
               <motion.img
-                src="/images/g-logo.png"
+                src={process.env.PUBLIC_URL + "/images/g-logo.png"}
                 alt="Google"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -298,7 +298,7 @@ export const ScreenContainer = ({ children, backgroundColor = '#fff', onNext, on
         justifyContent: 'center',
         zIndex: 5
       }}>
-        <img src="/images/gamewrapper-logo.svg" alt="Games Wrapped" style={{ height: '24px', width: 'auto' }} />
+        <img src={process.env.PUBLIC_URL + "/images/gamewrapper-logo.svg"} alt="Games Wrapped" style={{ height: '24px', width: 'auto' }} />
       </div>
       
       {/* Progress indicator - appears on all screens */}
